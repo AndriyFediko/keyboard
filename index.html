@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <input id="yourText" type="text" placeholder="Your text">
+        <div class="keyboard" id="keyboard">
+            <div class="keyboard__container">
+                <div class="FKeysRow">
+                    <button class="KeyButton FKey key27">esc</button>
+                    <button class="KeyButton FKey key112">F1</button>
+                    <button class="KeyButton FKey key113">F2</button>
+                    <button class="KeyButton FKey key114">F3</button>
+                    <button class="KeyButton FKey key115">F4</button>
+                    <button class="KeyButton FKey key116">F5</button>
+                    <button class="KeyButton FKey key117">F6</button>
+                    <button class="KeyButton FKey key118">F7</button>
+                    <button class="KeyButton FKey key119">F8</button>
+                    <button class="KeyButton FKey key120">F9</button>
+                    <button class="KeyButton FKey key121">F10</button>
+                    <button class="KeyButton FKey key122">F11</button>
+                    <button class="KeyButton FKey key123">F12</button>
+                    <button class="KeyButton FKey"></button>
+                </div>
+                <div class="numbersKeysRow">
+                    <button value="\" class="KeyButton nunmberKey key220 textKey">\</button>
+                    <button value="!" class="KeyButton nunmberKey key49 textKey notHiddenKey">1</button>
+                    <button value='"' class="KeyButton nunmberKey key50 textKey notHiddenKey">2</button>
+                    <button value="№" class="KeyButton nunmberKey key51 textKey notHiddenKey">3</button>
+                    <button value=";" class="KeyButton nunmberKey key52 textKey notHiddenKey">4</button>
+                    <button value="%" class="KeyButton nunmberKey key53 textKey notHiddenKey">5</button>
+                    <button value=":" class="KeyButton nunmberKey key54 textKey notHiddenKey">6</button>
+                    <button value="?" class="KeyButton nunmberKey key55 textKey notHiddenKey">7</button>
+                    <button value="*" class="KeyButton nunmberKey key56 textKey notHiddenKey">8</button>
+                    <button value="(" class="KeyButton nunmberKey key57 textKey notHiddenKey">9</button>
+                    <button value=")" class="KeyButton nunmberKey key48 textKey notHiddenKey">0</button>
+                    <button value="_" class="KeyButton nunmberKey key189 textKey notHiddenKey">-</button>
+                    <button value="+" class="KeyButton nunmberKey key187 textKey notHiddenKey">=</button>
+                    <button value="1" class="KeyButton nunmberKey key49 textKey hiddenKey">!</button>
+                    <button value="2" class="KeyButton nunmberKey key50 textKey hiddenKey">"</button>
+                    <button value="3" class="KeyButton nunmberKey key51 textKey hiddenKey">№</button>
+                    <button value="4" class="KeyButton nunmberKey key52 textKey hiddenKey">;</button>
+                    <button value="5" class="KeyButton nunmberKey key53 textKey hiddenKey">%</button>
+                    <button value="6" class="KeyButton nunmberKey key54 textKey hiddenKey">:</button>
+                    <button value="7" class="KeyButton nunmberKey key55 textKey hiddenKey">?</button>
+                    <button value="8" class="KeyButton nunmberKey key56 textKey hiddenKey">*</button>
+                    <button value="9" class="KeyButton nunmberKey key57 textKey hiddenKey">(</button>
+                    <button value="0" class="KeyButton nunmberKey key48 textKey hiddenKey">)</button>
+                    <button value="-" class="KeyButton nunmberKey key189 textKey hiddenKey">_</button>
+                    <button value="=" class="KeyButton nunmberKey key187 textKey hiddenKey">+</button>
+                    <button class="KeyButton nunmberKey key46 key8">
+                        delete
+                    </button>
+                </div>
+                <div class="letterKeysRow">
+                    <button class="KeyButton letterKey letterKeyRow1 key9">
+                        <img src="./img/arrow.png" alt="arrow">
+                    </button>
+                    <button value="Й" class="KeyButton letterKey key81 textKey">й</button>
+                    <button value="Ц" class="KeyButton letterKey key87 textKey">ц</button>
+                    <button value="У" class="KeyButton letterKey key69 textKey">у</button>
+                    <button value="К" class="KeyButton letterKey key82 textKey">к</button>
+                    <button value="Е" class="KeyButton letterKey key84 textKey">е</button>
+                    <button value="Н" class="KeyButton letterKey key89 textKey">н</button>
+                    <button value="Г" class="KeyButton letterKey key85 textKey">г</button>
+                    <button value="Ш" class="KeyButton letterKey key73 textKey">ш</button>
+                    <button value="Щ" class="KeyButton letterKey key79 textKey">щ</button>
+                    <button value="З" class="KeyButton letterKey key80 textKey">з</button>
+                    <button value="Х" class="KeyButton letterKey key219 textKey">х</button>
+                    <button value="Ї" class="KeyButton letterKey key221 textKey">ї</button>
+                    <button class="KeyButton letterKey enter key13">
+                        <img src="./img/EnterArrow.png" alt="enterArrow">
+                    </button>
+                </div>
+                <div class="letterKeysRow">
+                    <button class="KeyButton letterKey capsLosk key20">
+                        <div class="circle"></div>
+                        ⇪
+                    </button>
+                    <button value="Ф" class="KeyButton letterKey key65 textKey">ф</button>
+                    <button value="І" class="KeyButton letterKey key83 textKey">і</button>
+                    <button value="В" class="KeyButton letterKey key68 textKey">в</button>
+                    <button value="А" class="KeyButton letterKey key70 textKey">а</button>
+                    <button value="П" class="KeyButton letterKey key71 textKey">п</button>
+                    <button value="Р" class="KeyButton letterKey key72 textKey">р</button>
+                    <button value="О" class="KeyButton letterKey key74 textKey">о</button>
+                    <button value="Л" class="KeyButton letterKey key75 textKey">л</button>
+                    <button value="Д" class="KeyButton letterKey key76 textKey">д</button>
+                    <button value="Ж" class="KeyButton letterKey key186 textKey">ж</button>
+                    <button value="Є" class="KeyButton letterKey key222 textKey">є</button>
+                    <button value="'" class="KeyButton letterKey key39 textKey">'</button>
+                    <button class="KeyButton letterKey enterPart2 key13"></button>
+                </div>
+                <div class="letterKeysRow">
+                    <button class="KeyButton letterKey shift key16">⇧</button>
+                    <button value="Я" class="KeyButton letterKey key90 textKey">я</button>
+                    <button value="Ч" class="KeyButton letterKey key88 textKey">ч</button>
+                    <button value="С" class="KeyButton letterKey key67 textKey">с</button>
+                    <button value="М" class="KeyButton letterKey key86 textKey">м</button>
+                    <button value="И" class="KeyButton letterKey key66 textKey">и</button>
+                    <button value="Т" class="KeyButton letterKey key78 textKey">т</button>
+                    <button value="Ь" class="KeyButton letterKey key77 textKey">ь</button>
+                    <button value="Б" class="KeyButton letterKey key188 textKey">б</button>
+                    <button value="Ю" class="KeyButton letterKey key190 textKey">ю</button>
+                    <button value="." class="KeyButton letterKey key191 textKey">.</button>
+                    <button class="KeyButton letterKey shift shiftLoc2 key16">⇧</button>
+                </div>
+                <div class="comandRow">
+                    <button class="KeyButton fnButton key63">fn</button>
+                    <button class="KeyButton comandRowKey key59">⌃
+                        <span>control</span>
+                    </button>
+                    <button class="KeyButton comandRowKey option key58">⌥
+                        <span>option</span>
+                    </button>
+                    <button class="KeyButton comandRowKey comand key55">⌘
+                        <span>comand</span>
+                    </button>
+                    <button class="KeyButton shift key49 key32 textKey"></button>
+                    <button class="KeyButton comandRowKey optionLoc2">⌥
+                        <span>option</span>
+                    </button>
+                    <button class="KeyButton comandRowKey comandLoc2">⌘
+                        <span>comand</span>
+                    </button>
+                    <div class="arrowButtonsConatiner">
+                        <button class="KeyButton arrowTop arrowKey key38">
+                            <img src="./img/buttonArrow.png" alt="arrowtop">
+                        </button>
+                        <div class="centerArrowContainer">
+                        <button class="KeyButton arrowLeft arrowKey key37">
+                            <img src="./img/buttonArrow.png" alt="arrowtop">
+                        </button>
+                        <button class="KeyButton arrowBottom arrowKey key40">
+                            <img src="./img/buttonArrow.png" alt="arrowtop">
+                        </button>
+                        <button class="KeyButton arrowRight arrowKey key39">
+                            <img src="./img/buttonArrow.png" alt="arrowtop">
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scipt.js"></script>
+</body>
+</html>

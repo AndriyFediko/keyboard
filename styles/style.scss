@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.KeyButton {
+    border-radius: 5px;
+    background: rgb(34, 34, 34);
+    background: linear-gradient(169deg, rgba(34, 34, 34, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    color: white;
+    box-shadow: 0 0 5px #333;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textKey__BigLetters {
+    text-transform: uppercase;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        width: 1000px;
+        outline: none;
+        border-radius: 20px;
+        height: 50px;
+        padding-left: 20px;
+        font-size: 1.2em;
+        border: 2px solid #333;
+        color: #333;
+    }
+
+    .keyboard {
+        width: 1150px;
+        height: 455px;
+        border-radius: 20px;
+        background: rgb(215, 215, 215);
+        background: linear-gradient(90deg, rgba(215, 215, 215, 1) 0%, rgba(191, 191, 191, 1) 100%);
+        margin: 20px 0;
+        padding: 30px 50px 60px 50px;
+        box-shadow:
+            1px 1px 0px rgb(145, 145, 145),
+            1px 2px 0px rgb(145, 145, 145),
+            1px 3px 0px rgb(145, 145, 145),
+            2px 4px 0px rgb(145, 145, 145),
+            2px 5px 0px rgb(145, 145, 145),
+            3px 6px 0px rgb(145, 145, 145),
+            3px 7px 0px rgb(145, 145, 145),
+            4px 8px 0px rgb(145, 145, 145);
+    }
+
+    .keyboard__container {
+        width: 100%;
+        height: 100%;
+
+        .FKeysRow {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+
+            .FKey {
+                letter-spacing: 1.5px;
+                width: 6.7%;
+                height: 100%;
+            }
+
+            .FKey:last-child {
+                width: 35px;
+            }
+        }
+
+        .numbersKeysRow {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+
+            .nunmberKey {
+                width: 65px;
+                height: 100%;
+            }
+
+            .nunmberKey:last-child {
+                width: 80px;
+                padding: 10px;
+                font-size: 0.8em;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+        .hiddenKey{
+            display: none;
+        }
+
+        .letterKeysRow {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+
+            .letterKeyRow1 {
+                width: 80px !important;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding: 10px;
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            .letterKey {
+                width: 65px;
+            }
+
+            .enter {
+                width: 80px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding: 10px;
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            .capsLosk {
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 10px 10px 8px 10px;
+
+                .circle {
+                    width: 10px;
+                    height: 10px;
+                    background-color: white;
+                    border-radius: 50%;
+                }
+            }
+
+            .capsLosk__active {
+                .circle {
+                    background-color: green;
+                }
+            }
+
+            .enterPart2 {
+                width: 52px;
+                height: 75px;
+                position: relative;
+                bottom: 15px;
+                background: rgb(49, 49, 49) !important;
+            }
+
+            .shift {
+                width: 145px;
+                padding: 10px;
+            }
+
+            .shift:first-child {
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .shift:last-child {
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+
+        .comandRow {
+            width: 100%;
+            margin-top: 10px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .fnButton {
+                width: 65px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .comandRowKey {
+                width: 70px;
+                height: 60px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                span {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 0.8em;
+                }
+            }
+
+            .shift {
+                width: 370px;
+                height: 100%;
+            }
+
+            .arrowButtonsConatiner {
+                width: 200px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .arrowKey {
+                    width: 60px;
+                    height: 29px;
+
+                    img {
+                        height: 35%;
+                    }
+                }
+
+                .arrowTop {
+                    img {
+                        transform: rotate(270deg);
+                        height: 30%;
+                    }
+                }
+
+                .centerArrowContainer {
+                    display: flex;
+                    margin-top: 2px;
+                    justify-content: space-between;
+
+                    .arrowBottom {
+                        margin: 0 2px;
+
+                        img {
+                            transform: rotate(90deg);
+                            height: 35%;
+                        }
+                    }
+
+                    .arrowLeft {
+                        img {
+                            transform: rotate(180deg);
+                            height: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
